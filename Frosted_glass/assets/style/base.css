@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    box-shadow: none;
+    box-sizing: border-box;
+    vertical-align: baseline;
+    -webkit-transition-duration: 0s;
+    transition-duration: 0s;
+}
+
+p, a, li, label, input, textarea, div, span {
+    font-family: Arial, Helvetica, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smothing: grayscale;
+    text-rendering: optimizeLegibility;
+    letter-spacing: 0;
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.nav ul li a{
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+header {
+    min-width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    overflow: hidden;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title {
+    height: 56px;
+    padding-left: 50px;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 56px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: right;
+    height: 0;
+}
+
+nav ul{
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li{ 
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a{
+    font-size:  17px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li + li{
+    margin-left: 25px;
+    
+}
+
+/* column */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 100vh;
+    margin: 0 auto;
+}
+
+.number{
+    font-size: larger;
+}
+
+main{
+    height: calc(100vh - 36px);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+hr{
+   border-bottom: 1px solid rgb(255, 255, 255);
+   width: 370px;
+}
+
+
+
+/* ---------------------- */
+
+
+/* .pop-up{
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 10%;
+    left: 35%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 8%;
+    background-color: whitesmoke;
+    z-index: 999;
+    opacity: 70%;
+    filter: blur(0.5px);
+} */
