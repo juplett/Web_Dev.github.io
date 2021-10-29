@@ -1,0 +1,182 @@
+@import "bass.css";
+
+/* background & "main" content */
+
+main{
+    background: url(../img/mohammad-alizade-CDu0x1Aiils-unsplash.jpg);
+    width: 100%;
+    height: calc(100vh - 56px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.head{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.head p{
+    text-size-adjust: 20px;
+}
+
+.about{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color:  rgb(35, 98, 141);
+}
+
+.button{
+    background-color:  rgb(9, 62, 93);
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 20%;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* img's that eventually lead to other pages */
+
+.more{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(35, 93, 141);
+}
+
+
+.animals{
+    width: 200px;
+    height: 300px;
+    border-radius: 10%;
+    background-color: rgb(35, 93, 141);
+    box-shadow: 5px 5px rgb(9, 62, 93);
+}
+
+.animals img{
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 10%;
+}
+
+/* forms code  */
+
+.info-container{
+    width: 100%;
+    height: 600px;
+    background-color: rgba(61, 104, 147, .9);
+    padding-top: 10px;
+}
+
+.forms{
+    margin-left: 120px;
+    margin-top: 20px;
+}
+
+.form h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form {
+    width: 400px;
+    font-size: 0
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0s ease-in-out;
+}
+
+form input +input{
+    margin-top: 15px;
+}
+
+input:focus{
+    border: 1px solid #61cafd;
+}
+
+input[type="reset"]{
+    width: 110px;
+    height: 46px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #039be5;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #038be5;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover{
+background-color: 1px solid #038ed2;
+    color: #038ed2;
+
+}
+
+input[type="submit"]{
+    margin-left: 15px;
+    width: 110px;
+    height: 46px;
+    text-align: center;
+    background-color: #039be5;
+    border: 1px solid #039be5;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #038ed2;
+}
+
+
+
+textarea{
+    margin-top: 15px;
+    width: 100%;
+    min-width: 100%;
+    height: 200px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    resize: none;
+    overflow: auto;
+}
+
+input[type="text"]:valid, [type="email"]:valid, textarea:valid{
+    background: #fff url(../img/approval-xxl.png) no-repeat 96% center;
+    background-size: 20px 20px; 
+    outline: none;
+}
