@@ -1,0 +1,170 @@
+@charset "utf-8";
+@import "base.css";
+
+/* ---------------------------- */
+/* ------------structure-------- */
+/* ------------------------------ */
+
+
+.row{
+    margin-top: 70px;
+}
+
+.row h2{
+     font-size: 20px;
+     font-weight: 600;
+}
+
+.flex{
+    margin-top: 10px;
+    padding: 15px;
+    border-radius: 6px;
+    background-color: #ebeced;
+    display: flex;
+}
+
+.flex div{
+    width: 140px;
+    height: 140px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.flex-wrap div, .flex-nowrap div{
+    width: 175px;
+    height: 140px;
+    border-radius: 6px;
+    text-align: center;
+}
+
+.flex div p{
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 140px;
+}
+
+.box1 {
+    background-color: #53add4;
+}
+
+.box2 {
+    background-color: #53ad43;
+}
+
+.box3 {
+    background-color: #e44326;
+}
+
+/* ------------------------------- */
+/* -----flex Implimintations------ */
+/* ------------------------------- */
+
+.flex-direction-row{
+    flex-direction: row;
+}
+
+.flex-direction-row-reverse{
+    flex-direction: row-reverse;
+}
+
+.flex-direction-column{
+    flex-direction: column;
+}
+
+.flex-direction-column-reverse{
+    flex-direction: column-reverse;
+}
+
+.flex-wrap{
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.flex-column-wrap{
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 310px;
+}
+
+.flex-column-nowrap{
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 310px;
+}
+
+/* justify content */
+
+.flex-start{
+    justify-content: flex-start;
+}
+
+.flex-end{
+    justify-content: flex-end;
+}
+
+.flex-center{
+    justify-content: center;
+}
+
+.flex-space-between{
+    justify-content: space-between;
+}
+
+.flex-space-around{
+    justify-content: space-around;
+}
+
+.flex-space-evenly{
+    justify-content: space-evenly;
+}
+
+
+/* align items */
+
+.flex-start{
+    align-items: flex-start;
+}
+
+.flex-end{
+    align-items: flex-end;
+}
+
+.align-center{
+    align-items: center;
+}
+
+.align-stretch div{
+    height: auto;
+}
+
+.align-stretch{
+    align-items: stretch;
+    height: 400px;
+}
+
+
+/* flex grow, basis, ect. */
+
+.flex-grow .box1,.flex-grow .box3{
+    flex-grow: 1;
+}
+
+.flex-basis{
+    margin-top: 10px;
+    padding: 15px;
+    display: flex;
+    border-radius: 6px;
+    background-color: #ebeced;
+}
+
+.flex-basis p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 140px;
+    text-align: center;
+}
+
+.flex-basis div{
+    flex-basis: 200px;
+    border-radius: 6px;
+}
