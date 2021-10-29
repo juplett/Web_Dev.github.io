@@ -1,0 +1,40 @@
+@charset "uft-8";
+@import "base.css";
+
+body{
+    background-color: rgb(233, 233, 233);
+}
+
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.main-column{
+    margin-top: 20px;
+    float: left;
+    width: calc(70% - 25px);
+    height: 600px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 10px 10px rgb(151, 149, 149);
+}
+
+aside{
+    margin-top: 20px;
+    margin-left: 25px;
+    float: left;
+    width: 30%;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 6px;
+    box-shadow: 10px 10px rgb(151, 149, 149);
+}
+/* 
+.container:after{
+    display: table;
+    clear: both;
+    content: "";
+} */

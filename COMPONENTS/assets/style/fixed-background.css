@@ -1,0 +1,14 @@
+@charset "utf-8";
+@import "base.css";
+
+
+
+
+body{
+     background:#fff url("../img/clouds.jpg") center center / cover no-repeat fixed;
+}
+
+.main{
+    margin-top: 60px;
+    margin-left: 150px;
+}

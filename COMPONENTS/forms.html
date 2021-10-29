@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form</title>
+</head>
+
+<style>
+
+    *{
+        font-size: 18px;
+        font-family: 'Times New Roman', Times, serif;
+    }
+
+    .container{
+        width: 90%;
+        max-width: 1080;
+        padding: 50px 0;
+        margin: 0 auto;
+       }
+
+</style>
+
+<body>
+    <div class="container">
+        <form id="form" method="POST" action="#">
+            <fieldset>
+                <legend>My form</legend>
+                <p>
+                    <lable for="name">First Name</lable>
+                    <input type="text" id="name" placeholder="Your First Name" required>
+                </p>
+
+                <p>
+                    <lable for="last-name">Last Name</lable>
+                    <input type="text" id="last-name" placeholder="Your Last Name" required>
+                </p>
+
+                <p>
+                    <lable for="email">Email</lable>
+                    <input type="email" id="email" placeholder="my@gmail.com" required>
+                </p>
+
+                <p>
+                    <lable for="phone">Phone Number</lable>
+                    <input type="tel" id="phone" placeholder="(000)-000-0000" required>
+                </p>
+
+                <p>
+                    <lable for="password">My Password</lable>
+                    <input type="password" id="password" placeholder="**********" required>
+                </p>
+
+                <p>
+                    <lable for="message">Leave a message</lable>
+                    <textarea type="message" id="message" placeholder="Your message" required></textarea>
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Additional info</legend>
+                <p>Choose your age</p>
+                <input type="radio" id="age1" value="0-15 years">
+                <label for="age1">0-15</label><br>
+                
+                <input type="radio" id="age2" value="16-30 years">
+                <label for="age2">16-30</label><br>
+
+                <input type="radio" id="age3" value="31-50 years">
+                <label for="age3">31-50</label><br>
+            </fieldset>
+            <br>
+            <input type="reset" class="reset" value="Clear">
+            <input type="submit" class="submit" value="Send">
+            <input type="button" class="button" value="Button" onclick="alert('Fuck you')">
+        </fieldset>
+
+        <fieldset>
+            <legend>What browser do you use</legend>
+            <input type="checkbox" id="firefox" value="Mozilla firefox">
+            <label for="firefox">Morzilla firefox</label><br>
+            
+            <input type="checkbox" id="chrom" value="google chrom">
+            <label for="chrom">Google Chrom</label><br>
+        </fieldset>
+    </div>
+    
+</body>
+</html>
