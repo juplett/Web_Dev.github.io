@@ -121,3 +121,15 @@ hr{
    width: 370px;
 }
 
+.mobile-nav{
+    overflow: hidden;
+}
+
+.mobile-nav p i{
+    margin-top: 18px;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    cursor: pointer;
+}
+
