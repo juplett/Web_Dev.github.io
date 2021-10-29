@@ -1,0 +1,227 @@
+@import "base.css";
+
+
+
+
+
+header {
+    min-width: 100%;
+    background-color: rgba(0, 0, 255, 0);
+    overflow: hidden;
+}
+
+header div{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.title {
+    height: 56px;
+    padding-left: 50px;
+}
+
+.title h1 {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    line-height: 56px;
+    letter-spacing: .4px;
+    text-transform: uppercase;
+}
+
+nav {
+    text-align: right;
+    height: 0;
+}
+
+nav ul{
+    list-style: none;
+    font-size: 0;
+}
+
+nav ul li{ 
+    display: inline;
+    line-height: 56px;
+    cursor: default;
+}
+
+nav ul li a{
+    font-size:  17px;
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+    padding: 10px;
+    text-decoration: none;
+    letter-spacing: .2px;
+    text-transform: none;
+    cursor: pointer;
+}
+
+nav ul li + li{
+    margin-left: 25px;
+    
+}
+
+/* column */
+.container {
+    position: relative;
+    width: 90%;
+    max-width: 100vh;
+    margin: 0 auto;
+}
+
+.number{
+    font-size: larger;
+}
+
+main{
+    height: calc(100vh - 36px);
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    margin: 0 auto;
+}
+
+hr{
+   border-bottom: 1px solid rgb(255, 255, 255);
+   width: 370px;
+}
+
+
+
+/* ---------------------- */
+
+
+.landing-page{
+    width: 100%;
+    height: 100vh;
+    background-attachment: scroll;
+    background-image: linear-gradient(45deg, rgba(20, 158, 136, .95) 0%, rgba(25, 21, 99, .85)100%), url('../img/blocks.gif?v=2');
+    background-position: 0% 0%, center;
+    background-repeat: repeat repeat;
+    background-size: cover, 500px;
+    background-color: #22242a;
+}
+
+
+.pop-up{
+    position: absolute;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    top: 10%;
+    left: 35%;
+    height: 80%;
+    padding: 10px;
+    border-radius: 8%;
+    background-color: whitesmoke;
+    z-index: 999;
+}
+
+
+/* ------------------------- */
+
+.form {
+    margin-top: 60px;
+    
+}
+
+.form h2{
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.form p {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+form {
+    margin-top: 15px;
+    width: 400px;
+    font-size: 0;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+    padding: 0 15px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #000;
+    transition: all 0s ease-in-out;
+}
+
+form input +input{
+    margin-top: 15px;
+}
+
+input:focus{
+    border: 1px solid #61cafd;
+}
+
+input[type="reset"]{
+    width: 110px;
+    height: 46px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #039be5;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #038be5;
+    cursor: pointer;
+}
+
+input[type="reset"]:hover{
+background-color: 1px solid #038ed2;
+    color: #038ed2;
+
+}
+
+input[type="submit"]{
+    margin-left: 15px;
+    width: 110px;
+    height: 46px;
+    text-align: center;
+    background-color: #039be5;
+    border: 1px solid #039be5;
+    font-weight: 600;
+    letter-spacing: .2px;
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover{
+    background-color: #038ed2;
+}
+
+
+
+textarea{
+    margin-top: 15px;
+    width: 100%;
+    min-width: 100%;
+    height: 200px;
+    padding: 15px;
+    font-size: 16px;
+    font-weight: 400;
+    background-color: white;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    resize: none;
+    overflow: auto;
+}
+
+input[type="text"]:valid, [type="email"]:valid, textarea:valid{
+    background: #fff url(../img/approval-xxl.png) no-repeat 96% center;
+    background-size: 20px 20px; 
+    outline: none;
+}
