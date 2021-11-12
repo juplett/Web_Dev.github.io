@@ -1,0 +1,53 @@
+@charset "UFT-8";
+@import "base.css";
+
+main{
+    height: 400px;
+    background-color: #f3f4f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+main::before{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    content: "";
+    background-color: rgba(0, 177, 106, .25);
+    z-index: -1;
+    transform-origin: center center;
+    animation: rotater 6s linear infinite;
+}
+
+main::after{
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    content: "";
+    background-color: rgba(106, 0, 177, .25);
+    z-index: -1;
+    transform-origin: center center;
+    animation: rotatel 6s linear infinite;
+}
+
+@keyframes rotater {
+    0% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(180deg);}
+    100% {transform: rotateZ(360deg);}
+}
+
+@keyframes rotatel {
+    0% {transform: rotateZ(0deg);}
+    50% {transform: rotateZ(-180deg);}
+    100% {transform: rotateZ(-360deg);}
+}
+
+.heading h2{
+  font-size: 56px;
+  font-weight: 900;
+  letter-spacing: -.2px;
+  color: #232629;
+  text-shadow: 0 .3px 0 #000;
+}
